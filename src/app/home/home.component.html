@@ -1,0 +1,9 @@
+<div class="row">
+  <div class="jumbotron">
+    <img src="/assets/images/w_movie.jpg" class="figure-img img-fluid rounded float-left">
+    <h1 class="display-4">Las mejores películas y series?? Aquí!!!</h1>
+  </div>
+  <div *ngFor="let movie of movies" class="col-12 col-md-6  col-lg-4">
+    <app-movie-item [movie]="movie"></app-movie-item>
+  </div>
+</div>
